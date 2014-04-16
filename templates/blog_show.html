@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} {{ blog.caption }} {% endblock %}
+
+{% block content %}
+
+<div class="content">
+	<h1 style="text-align:center">{{ blog.caption }}</h1>
+	<h6>{{ blog.published_time|date:"Y年m月d日"}}, 分类:{{blog.category}}</h6>
+
+	{% for tag in blog.tags.all %}
+		<div class="label label-info label-arrow label-arrow-right">{{ tag }}</div> 
+	{% endfor %}
+	<br><br>
+	<center>
+	{% for blog_picture in blog.blog_pictures.all reversed %}
+		<img src="{{ blog_picture.image_url }}"  alt="Responsive image" class="img-thumbnail" >
+	{% endfor %}
+	</center>
+        {% load markup %}
+	<p> {{ blog.content|markdown:'codehilite'}}</p>
+</div>
+
+{% endblock %}
+
+
+

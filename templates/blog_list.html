@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="content">
+	{% for blog in blogs %}
+		<div class="page-header">
+			<h3>
+			<a href="{% url blog_article blog.article_id %}">{{ blog.caption }}</a>&nbsp;
+			{% if blog.blog_pictures.all %}
+			<span class="glyphicon glyphicon-picture"></span>
+			{% endif %}
+			</h3>
+			<h6>{{ blog.published_time|date:"Y年m月d日"}}, 分类:{{blog.category}}</h6>
+			{% for tag in blog.tags.all %}
+				<div class="label label-info label-arrow label-arrow-right">{{ tag }}</div> 
+			{% endfor %}
+		        
+		        {% load markup %}
+			<p>{{ blog.content|markdown|truncatewords:"40"}}</p>
+			<h5><a href="{% url blog_article blog.article_id %}">阅读全文>></a></h5>
+		</div>
+	{% endfor %}
+	
+	{% include "page.html" %}
+
+</div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>博客后台管理</title>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstirap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+     <link rel="shortcut icon" href="http://wongxinjie-wongxinjie.stor.sinaapp.com/img/favicon.ico">
+
+    <style>
+        html, body{
+		height: 100%;
+	}
+	body {
+		background-color: #CCC;
+	
+	}
+        body {
+		background-image: url("http://wongxinjie-wongxinjie.stor.sinaapp.com/img/background.jpg");
+	}
+	#content {
+		min-height: 100%;
+		height: auto;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="row">
+		<div  class="span8">
+                  
+               	 	{% for blog in blogs %}
+                       		<div id="content" class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">{{ blog.caption }}</h3>
+                                	</div>
+					<div class="panel-body">
+						<p>
+						{% load markup %} 
+						{{ blog.content|markdown|truncatewords:"50"}}</p>
+                                	</div>
+					<div class="panel-footer" style="text-align: right">
+					       <a class="btn  btn-success jumbo"  href="{% url admin_edit blog.article_id %}">编辑</a>
+					</div>
+				</div>
+			{% endfor %}
+                       <p style="text-align: right"> <a class="btn btn-large btn-primary jumbo" href="{% url admin_new %}">新建博客:</a></p>
+
+	      </div>
+             <div class="span3"></div>
+       </div>
+    </div><!-- /.container -->
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

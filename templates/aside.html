@@ -1,0 +1,12 @@
+<h4>分类 &nbsp;<span class="glyphicon glyphicon-folder-open"></span></h4>
+<div class="list-group">
+	{% for category in categories %}
+		<a class="list-group-item" href="{% url blog_category category.slug %}">{{ category.name }}</span></a>
+	{% endfor %}
+</div>
+<br>
+<h4>标签&nbsp;<span class="glyphicon glyphicon-tags"></span></h4>
+{% for tag in tags %}
+<a class="label label-info" href="{% url blog_tag tag.id %}">{{ tag.tag_name }}</a>
+<br><br>
+{% endfor %}
