@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>我的简历</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="/static/css/cv.css">
+<link rel="shortcut icon" href="http://wongxinjie-wongxinjie.stor.sinaapp.com/img/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">黄新杰</h1>
+			<h2 class="quickFade delayThree">Java、Python、MySql</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>邮箱: <a href="mailto: hgxinjie@163.com" target="_blank">hgxinjie@163.com</a></li>
+				<li>主页: <a href="http://www.wongxinjie.com" target="_blank">http://www.wongxinjie.com</a></li>
+				<li>手机:188-2511-1143</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>求职意向</h1>
+				</div>
+				<div class="sectionContent">
+					<p>软件开发实习生
+					</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>专业技能</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Java（熟悉）</li>
+					<li>Python（熟悉）</li>
+					<li>Django（熟悉）</li>
+					<li>JSP（了解）</li>
+					<li>SSH框架（了解）</li>
+					<li>MySql（了解）</li>
+					<li>Linux</li>
+					<li>Git</li>
+					<li>SVN</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<section>
+			<div class="sectionTitle">
+				<h1>教育经历</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2>华南师范大学</h2>
+					<p class="subDetails">2011.08 - 2015.06</p>
+					<p>计算机学院2011级，网络工程系。
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<section>
+			<div class="sectionTitle">
+				<h1>修读课程</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2>重点修读课程</h2>
+					<p>数据结构、算法、操作系统、编译原理、数据库原理<br>
+					Java程序设计、J2EE（SSH）、大型数据库系统技术（MySql)、Web Service
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>开发经历</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>2013年11月</h2>
+					<p>Java简易Mp3播放器(https://github.com/WongXinjie/simplejavaplayer)<br>一个基于JMF2.1(Java Media Framework)框架实现的MP3播放器<br>通过调用JMF的接口实现了MP3音频播放功能，实现了歌曲添加、删除以及随机播放等功能，歌曲列表的持久化保存。</p>
+				</article>
+				<article>
+					<h2>2014年4月</h2>
+					<p>用python的django框架在SAE搭建的个人博客。前端用的是Bootstrap3框架。博客后台是django自带的admin。</p>
+				</article>
+				<article>
+					<h2>2014年5月</h2>
+					<p>用python的django框架在SAE搭建的一个在线的电子书阅读网站。前端用的是Bootstrap3框架。主要的功能是模仿豆瓣阅读的功能。</p>
+				</article>
+				
+                        </div>				
+			<div class="clear"></div>
+		</section>
+		
+
+	</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49248537-1', 'callmewhy.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
+  
+

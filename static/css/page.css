@@ -1,0 +1,57 @@
+    html, body{
+      height: 100%;
+    }
+
+    body {
+      background-color: #CCC;
+      padding-top: 70px;
+    }
+    body {
+	background-image: url("http://wongxinjie-wongxinjie.stor.sinaapp.com/img/background.jpg");
+	}
+
+    #wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+	}
+
+    .container .credit{
+	margin: 20px 0;
+	text-align: center;
+	}
+
+     .center-block {
+ 	 display: block;
+  	margin-left: auto;
+ 	 margin-right: auto;
+	}
+     .breadcrumb {
+	background-color: #FFF;
+	}
+    #content {
+      min-height: 100%;
+      height: auto;
+      background-color: #FFF;
+      border-radius: 5px;
+    }
+    #content .main {
+      padding: 20px;
+    }
+    #content .sidebar {
+      padding: 10px;
+    }
+    #content p {
+      line-height: 30px;
+    }
+
+    #footer{
+	height: 60px;
+	background-color: #212121;
+    }
+    img{
+	page-break-inside: avoid;
+	max-width: 100% !important;
+	vertical-align: middle;
+	}

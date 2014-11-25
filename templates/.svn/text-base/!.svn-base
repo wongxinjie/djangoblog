@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+ <link rel="shortcut icon" href="http://wongxinjie-wongxinjie.stor.sinaapp.com/img/favicon.ico">
+
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<style type='text/css'>
+     html, body{
+	height: 100%;
+	}
+    body {
+      background-color: #CCC;
+      padding-top: 70px;
+    }
+    body{
+	background-image: url("http://wongxinjie-wongxinjie.stor.sinaapp.com/img/background.jpg");
+	}
+   #wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+   }
+
+    .container {
+	margin-left: auto;
+	margin-right: auto;
+	}
+    .modal-dialog {
+	width: auto;
+	}
+
+    #content {
+      background-color: #FFF;
+      border-radius: 5px;
+    }
+    #content .main {
+      padding: 20px;
+    }
+    #content .sidebar {
+      padding: 10px;
+    }
+    #content p {
+      line-height: 30px;
+    }
+    #footer{
+	padding-top: 20px;
+	height: 60px;
+	text-align: center;
+	background-color: #212121;
+	}
+
+    .featurette-divider {
+	margin: 80px 0;
+    }
+    
+     img{
+        page-break-inside: avoid;
+	max-width: 100%  !important;
+	}
+</style>
+<title>¿¿</title>
+</head>
+<body>
+
+<div id="wrap">
+{% include "header.html" %}
+
+<div class="container" id="content">
+<table class="table">
+<tbody>
+{% block content %}
+{% for document in documents %}
+<tr>
+<a href="{{ document.url }}" target="_blank">{{document.title}}</a>
+</tr>
+{% endfor %}
+{% endblock %}
+</tbody>
+</table>
+</div>
+</div>
+
+{% include "footer.html" %}
+</body>
+</html>

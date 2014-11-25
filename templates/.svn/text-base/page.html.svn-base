@@ -1,0 +1,12 @@
+<center>
+<ul class="pagination" >
+  <li><a href="{% if blogs.has_previous %}?page={{ blogs.previous_page_number }}{% endif %}">&laquo;</a></li>
+{% for num in paginator.page_range %}
+	<li {% ifequal num blogs.number %} class="active" {% endifequal %}><a href="?page={{ num }}">{{ num }} {% ifequal num blogs.number %} <span class="sr-only">(current)</span>{% endifequal %}</a></li>
+{% endfor %}
+  <li><a href="{% if blogs.has_next %}?page={{ blogs.next_page_number }}{% endif %}">&raquo;</a></li>
+</ul>
+</center>
+
+
+

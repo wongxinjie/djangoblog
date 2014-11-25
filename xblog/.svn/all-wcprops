@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/wongxinjie/!svn/ver/52/1/xblog
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/wongxinjie/!svn/ver/52/1/xblog/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/wongxinjie/!svn/ver/52/1/xblog/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/wongxinjie/!svn/ver/1/1/xblog/__init__.py
+END
+http.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/wongxinjie/!svn/ver/1/1/xblog/http.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/wongxinjie/!svn/ver/1/1/xblog/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/wongxinjie/!svn/ver/53/1/xblog/models.py
+END
+storage.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/wongxinjie/!svn/ver/1/1/xblog/storage.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/wongxinjie/!svn/ver/1/1/xblog/forms.py
+END
